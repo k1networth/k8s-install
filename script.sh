@@ -30,7 +30,6 @@ net.bridge.bridge-nf-call-iptables=1
 EOF
 sudo sysctl -p /etc/sysctl.conf
 
-# return to user
 # In v1.22 and later, if the user does not set the cgroupDriver field under KubeletConfiguration, kubeadm defaults it to systemd.
 # by default containerd set SystemdCgroup = false, so you need to activate SystemdCgroup = true, put it in /etc/containerd/config.toml
 # https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/configure-cgroup-driver/
