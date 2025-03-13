@@ -17,6 +17,9 @@ sudo apt-get update -y
 sudo apt-get install -y kubelet kubeadm kubectl containerd
 sudo apt-mark hold kubelet kubeadm kubectl
 
+# activate specific modules
+# overlay — The overlay module provides overlay filesystem support, which Kubernetes uses for its pod network abstraction
+# br_netfilter — This module enables bridge netfilter support in the Linux kernel, which is required for Kubernetes networking and policy.
 sudo modprobe br_netfilter
 sudo modprobe overlay
 
