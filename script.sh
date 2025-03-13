@@ -23,6 +23,7 @@ sudo apt-mark hold kubelet kubeadm kubectl
 sudo modprobe br_netfilter
 sudo modprobe overlay
 
+# enable packet forwarding, enable packets crossing a bridge are sent to iptables for processing
 cat <<EOF | sudo tee -a /etc/sysctl.conf
 net.ipv4.ip_forward=1
 net.bridge.bridge-nf-call-iptables=1
