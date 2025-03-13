@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
+
+# install packages
 set -e
 
 sudo apt-get update -y
